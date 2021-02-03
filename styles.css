@@ -1,0 +1,219 @@
+/*
+styles.css
+Created by Tim Gibney
+1/18/2021
+FESD-FET-Week2
+*/
+
+h3 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+#ol-inner-lower-case-letters {
+    list-style-type: lower-alpha;
+}
+
+#ol-inner-inner-lower-case-letters {
+    list-style-type: lower-roman;
+}
+
+div.instructions {
+    background-color: lightgray;
+}
+
+/*Whole Body element style*/
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+/*Whole Body element style*/
+div.menu {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgray;
+    border-style:solid;
+}
+
+.div-with-float {
+    width: 50%;
+    background-color: palegreen;
+}
+
+.div-with-float-align-bottom {
+    width: 50%;
+    background-color: palegreen;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+hr {/*This way all floats will be cleared before the hr*/
+    clear: both;
+}
+
+.clear-with-overflow { /*This is the best way to clear floats, more efficient*/
+    overflow: auto;/*avoid extra line break and container element expands to enclose*/
+}/*the entire floated element*/
+
+.clear-both {
+      clear: both;
+  }
+
+.img-float-left{
+      float: left;
+      margin: 10px 10px 0px 0px;
+  }
+
+.img-float-right{
+    float: right;
+    margin: 10px 0px 0px 10px;
+}
+
+.Center { 
+    width:200px; 
+    height:200px; 
+    position: relative; 
+    background-color: blue; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -100px; 
+    margin-left: -100px; 
+}
+
+.row {
+    display: flex;
+    width: 50%;
+  }
+  
+.column-float-left {
+    flex: 50%;
+    float: left;
+    /* text-align: justify; */
+    margin: 0px 10px 0px 0px;
+  }
+  
+.column-float-right {
+      flex: 50%;
+      float: right;
+      /* text-align: justify; */
+      margin: 0px 0px 0px 10px;
+    }
+
+span.menu {
+    border-style:solid;
+    display:inline-block;
+    width: 150px
+}
+
+span.menu a:hover {
+    background-color: lightpink;
+}
+
+nav {
+    border-style:solid;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333333; */
+    width:25%
+  }
+  
+li.menu {
+    float: left;
+    background-color: #333333;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  }
+  
+li.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /*Changes the color of the tab while it is hovered over*/
+li.menu a:hover {
+    background-color: #111111;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  }
+
+  /*Changes the color of the active tab on a per page basis*/
+li.menu.active {/*Apply to each page's menu item to be active*/
+      background-color: #777777;
+      border-top-left-radius:10px;
+      border-top-right-radius:10px;
+  }
+
+/*Standard element style*/
+p {
+    color: black;
+}
+
+html.index {
+    background-color: lightgreen;
+}
+
+html.page1 {
+    background-color: lightseagreen;
+}
+
+html.page2 {
+    background-color: green;
+}
+
+/*Class styling*/
+.someClass {
+    color: black;
+}
+
+/*ID styling*/
+#someID {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    text-align: left;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+th {
+    background-color: white;
+}
+
+/* th:hover {
+    background-color: none !important;
+} */
+th #tableTitle {
+    text-align: center;
+}
+
+ol.courseWorkList {
+    background-color: pink;
+    width: 10%;
+}
