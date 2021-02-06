@@ -5,24 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FESD FET Week 3 - PAGE 2</title>
+    <title>FESD FET Week 3 - Page 2 - Table</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="instructions">
+    <div class="container-fluid bg-dark text-light">
         <h5>FESD FET Week 3 Instructions</h5>
             <h6>
                 <ol>
                     <li>Create a new website using HTML and Bootstrap. The website must include the following:
-                        <ol id="ol-inner-lower-case-letters">
+                        <ol type="a">
                             <li>A Bootstrap navbar</li>
                             <li>A Bootstrap styled table</li>
                             <li>A Bootstrap styled form</li>
                             <li>At least 2 pages</li>
                             <li>Bootstrap grid used throughout to format elements</li>
-                                <ol id="ol-inner-inner-lower-case-letters">
+                                <ol type="i">
                                     <li>Elements should stack vertically when the window is small</li>
                                 </ol>
                         </ol>
@@ -31,7 +30,7 @@
             </h6>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Tim Gibney's Pages</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +42,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="page2.html">Page 2</a>
+                        <a class="nav-link" href="page2.html">Page 2 - Table</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page3.html">Page 3</a>
+                        <a class="nav-link" href="page3.html">Page 3 - Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Page 4</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,8 +56,9 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="page2.html">Page 2</a></li>
-                            <li><a href="page3.html">Page 3</a></li>
+                            <li><a href="page2.html">Page 2 - Table</a></li>
+                            <li><a href="page3.html">Page 3 - Form</a></li>
+                            <li><a href="page4.html">Page 4</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,34 +66,160 @@
         </nav>
     </div>
 
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    Content
-                </div>
-                <div class="col-sm">
-                    Content
-                </div>
-                <div class="col-sm">
-                    Content
-                </div>
-            </div>
-        </div>
+    <div class="container text-center">
+        Prompt for a dataset and return data into the table below
+    </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm">
-                    Content
-                </div>
-                <div class="col-sm">
-                    Content
-                </div>
-                <div class="col-sm">
-                    Content
-                </div>
-            </div>
-        </div>
+    <div class="table-responsive">
+        <table class="table table-sm table-bordered table-dark table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="6" class="text-center">Table Title</th>
+                </tr>
+                <tr>
+                    <th scope="col">Line Item</th>
+                    <th scope="col">Part Number</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Class</th>
+                </tr>
+            </thead>
+            <tbody
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center">
+        As a product descriptor column is selected above, perhaps its detail could populate the responsive table below - UNDER CONSTRUCTION
+    </div>
+
+    <div class="container">
+        <table class="table table-sm table-bordered table-dark table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="6" class="text-center">Table Title</th>
+                </tr>
+                <tr>
+                    <th scope="col">Line Item</th>
+                    <th scope="col">Part Number</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
